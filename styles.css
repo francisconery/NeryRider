@@ -6,38 +6,51 @@
 
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif;
 }
 
-body {
-    background-image: url('sua-imagem.jpg'); /* Substitua por sua imagem */
-    background-size: cover;
-    background-position: center;
+.carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slides img {
+    min-width: 100%;
+    height: auto;
 }
 
 .overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn {
-    background-color: #007BFF;
+.social-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-btn {
     color: white;
-    border: none;
+    text-decoration: none;
     padding: 10px 20px;
-    margin: 10px;
+    border: 1px solid white;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background 0.3s;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.social-btn:hover {
+    background: white;
+    color: black;
 }
