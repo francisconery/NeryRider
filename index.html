@@ -61,6 +61,7 @@
         }
         .navbar-brand img {
             height: 40px; /* Ajuste a altura do logo conforme necessário */
+        
         }
         .container {
             margin-top: 50px;
@@ -149,27 +150,14 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#"><img src="./logo/seu-logo.png" alt="Logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#section1">Socials</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#section2">Partners</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#section3">Contacts</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+        <a class="navbar-brand" href="#">
+            <img src="./logo/seu-logo.png" alt="Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+        </a>
+    </nav>
+    
 <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="./img/imagem1.jpg" class="d-block w-100" alt="Imagem 1">
@@ -190,10 +178,13 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+    
+
 </div>
 
+
 <div id="section1" class="container black" style="margin-top: 10vh;">
-    <h1 class="title">Socials</h1>
+    
     <div class="row justify-content-center social-icons">
         <div class="col-auto">
             <a href="https://www.youtube.com/@neryrider" target="_blank" title="YouTube">
@@ -220,7 +211,7 @@
 
 
 <div id="section2" class="container black" style="margin-top: 10vh;">
-    <h1 class="title">Partners</h1>
+    
     <div class="row">
         <div class="col text-center">
             <div class="card-container">
@@ -262,7 +253,7 @@
 </div>
 
 <div id="section3" class="container black" style="margin-top: 10vh;">
-    <h1 class="title">Message Me</h1>
+    
     
     <form
     action="https://formspree.io/f/mzzbzwng"
